@@ -44,9 +44,9 @@ This is a collaborative project completed as part of the Software Engineering cu
 
 | File | Description | Developed By |
 | :--- | :--- | :--- |
-| **`main.h`** | Header file containing all function prototypes, includes, and `struct` definitions. | Shatha Haddad |
-| **`_printf.c`** | Main entry function that parses the format string and routes specifiers to target functions. | Shatha Haddad |
-| **`print_chars.c`** | Handler functions for `%c`, `%s`, and `%%` conversion specifiers. | Shatha Haddad |
+| **`main.h`** | Header file containing all function prototypes, includes, and `struct` definitions. | Shatha Alghamdi |
+| **`_printf.c`** | Main entry function that parses the format string and routes specifiers to target functions. | Shatha Alghamdi |
+| **`functions.c`** | Handler functions for `%c`, `%s`, and `%%` conversion specifiers. | Shatha Alghamdi |
 | **`helpers.c`** | Low-level output function (`_putchar`) using standard system call `write`. | Arwa Alhomrani |
 | **`print_numbers.c`**| Handler functions for integer conversions (`%d` and `%i`), handling negative numbers and limits. | Arwa Alhomrani |
 | **`README.md`** | Comprehensive project documentation and installation guide. | Arwa Alhomrani |
