@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
- * print_char - prints one character
- * @c: character to print
+ * print_char - Prints a single character
+ * @c: Character to print
  *
- * Return: number of characters printed
+ * Return: Number of characters printed
  */
 int print_char(char c)
 {
@@ -12,10 +11,10 @@ int print_char(char c)
 }
 
 /**
- * print_string - prints a string
- * @str: string to print
+ * print_string - Prints a string
+ * @str: String to print
  *
- * Return: number of characters printed
+ * Return: Number of characters printed
  */
 int print_string(char *str)
 {
@@ -45,7 +44,6 @@ int print_number(int n)
 {
 	unsigned int num;
 	int count;
-	char digit;
 
 	count = 0;
 
@@ -59,11 +57,10 @@ int print_number(int n)
 		num = (unsigned int)n;
 	}
 
-	if (num / 10 != 0)
+	if (num / 10)
 		count += print_number(num / 10);
 
-	digit = (num % 10) + '0';
-	count += print_char(digit);
+	count += print_char((num % 10) + '0');
 
 	return (count);
 }
