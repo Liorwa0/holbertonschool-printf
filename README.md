@@ -79,7 +79,7 @@ The following flowchart illustrates how the `_printf` function processes the for
 Clone the project from GitHub to your local machine:
 
 ```bash
-git clone https://github.com/ghadi0alzh rani0/holbertonschool-printf.git
+git clone https://github.com/ShathaAlghamdi/holbertonschool-printf.git
 ```
 
 Then navigate into the project directory:
