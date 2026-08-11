@@ -1,4 +1,4 @@
-# 0x11. C - printf
+# C - printf
 
 ## Description
 This project is a custom implementation of the C standard library function `printf`. The function `_printf` formats and prints data to the standard output stream (`stdout`) according to a specified format string. 
@@ -45,9 +45,30 @@ This is a collaborative project completed as part of the Software Engineering cu
 | **`main.h`** | Header file containing all function prototypes, includes, and `struct` definitions. | Shatha Alghamdi |
 | **`_printf.c`** | Main entry function that parses format string and routes specifiers. | Shatha Alghamdi |
 | **`functions.c`** | Handler functions for `%c`, `%s`, and `%%` conversion specifiers. | Shatha Alghamdi |
-| **`helpers.c`** | Low-level output function (`_putchar`) using standard system call `write`. | Arwa Alhomrani |
-| **`print_numbers.c`**| Handler functions for integer conversions (`%d` and `%i`), handling limits. | Arwa Alhomrani |
+| `man_3_printf` | Manual page for the custom `_printf` function |Shatha Alghamdi |
 | **`README.md`** | Comprehensive project documentation and installation guide. | Arwa Alhomrani |
+
+The project structure is:
+
+```text
+holbertonschool-printf/
+├── _printf.c
+├── functions.c
+├── main.h
+├── man_3_printf
+├── print_numbers.c
+├── README.md
+└── images/
+    └── printf_flowchart.png
+```
+
+---
+
+## Flowchart
+
+The following flowchart illustrates how the `_printf` function processes the format string and handles the supported conversion specifiers.
+
+![Printf Flowchart](images/printf_flowchart.png)
 
 ---
 
