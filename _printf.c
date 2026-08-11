@@ -34,13 +34,13 @@ int _printf(const char *format, ...)
 			else if (*format == '%')
 				count += print_char('%');
 
+			else if (*format == 'd' || *format == 'i')
+				count += print_number(va_arg(args, int));
 
 			else
 			{
-                print_char('%');
-                count ++;
-                print_char(*format);
-                count++;
+				count += print_char('%');
+				count += print_char(*format);
 			}
 		}
 		else

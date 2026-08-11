@@ -50,3 +50,35 @@ int print_string(char *str)
 	return (i);
 }
 
+/**
+ * print_number - Prints an integer
+ * @n: Integer to print
+ *
+ * Return: Number of characters printed
+ */
+int print_number(int n)
+{
+	unsigned int num;
+	int count;
+	char digit;
+
+	count = 0;
+
+	if (n < 0)
+	{
+		count += print_char('-');
+		num = -(unsigned int)n;
+	}
+	else
+	{
+		num = (unsigned int)n;
+	}
+
+	if (num / 10 != 0)
+		count += print_number(num / 10);
+
+	digit = (num % 10) + '0';
+	count += print_char(digit);
+
+	return (count);
+}
