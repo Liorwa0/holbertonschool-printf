@@ -144,7 +144,9 @@ Percent: %
 ```
 
 ---
+
 The `_printf` function returns the total number of characters printed.
+
 ---
 
 ## Authors
