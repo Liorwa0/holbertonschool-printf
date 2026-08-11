@@ -19,8 +19,6 @@ This is a collaborative project completed as part of the Software Engineering cu
 
 ## Authorized Functions & Macros
 * `write` (`man 2 write`)
-* `malloc` (`man 3 malloc`)
-* `free` (`man 3 free`)
 * `va_start` (`man 3 va_start`)
 * `va_end` (`man 3 va_end`)
 * `va_copy` (`man 3 va_copy`)
@@ -44,11 +42,11 @@ This is a collaborative project completed as part of the Software Engineering cu
 
 | File | Description | Developed By |
 | :--- | :--- | :--- |
-| **`main.h`** | Header file containing all function prototypes, includes, and `struct` definitions. | Shatha Haddad |
-| **`_printf.c`** | Main entry function that parses the format string and routes specifiers to target functions. | Shatha Haddad |
-| **`print_chars.c`** | Handler functions for `%c`, `%s`, and `%%` conversion specifiers. | Shatha Haddad |
+| **`main.h`** | Header file containing all function prototypes, includes, and `struct` definitions. | Shatha Alghamdi |
+| **`_printf.c`** | Main entry function that parses format string and routes specifiers. | Shatha Alghamdi |
+| **`functions.c`** | Handler functions for `%c`, `%s`, and `%%` conversion specifiers. | Shatha Alghamdi |
 | **`helpers.c`** | Low-level output function (`_putchar`) using standard system call `write`. | Arwa Alhomrani |
-| **`print_numbers.c`**| Handler functions for integer conversions (`%d` and `%i`), handling negative numbers and limits. | Arwa Alhomrani |
+| **`print_numbers.c`**| Handler functions for integer conversions (`%d` and `%i`), handling limits. | Arwa Alhomrani |
 | **`README.md`** | Comprehensive project documentation and installation guide. | Arwa Alhomrani |
 
 ---
@@ -57,5 +55,5 @@ This is a collaborative project completed as part of the Software Engineering cu
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/Shatha-and-Arwa/holbertonschool-printf.git](https://github.com/Shatha-and-Arwa/holbertonschool-printf.git)
+git clone [https://github.com/ghadi0alzhrani0/holbertonschool-printf.git](https://github.com/ghadi0alzhrani0/holbertonschool-printf.git)
 cd holbertonschool-printf
