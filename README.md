@@ -75,6 +75,86 @@ The following flowchart illustrates how the `_printf` function processes the for
 ## Compilation & Usage
 
 ### 1. Clone the repository
+
+Clone the project from GitHub to your local machine:
+
 ```bash
-git clone [https://github.com/ghadi0alzhrani0/holbertonschool-printf.git](https://github.com/ghadi0alzhrani0/holbertonschool-printf.git)
+git clone https://github.com/ghadi0alzh rani0/holbertonschool-printf.git
+```
+
+Then navigate into the project directory:
+
+```bash
 cd holbertonschool-printf
+```
+
+---
+
+### 2. Compile the project
+
+Compile the source files using GCC with the required flags:
+
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o printf
+```
+
+This command compiles all `.c` files in the project and creates an executable file named `printf`.
+
+---
+
+### 3. Run the program
+
+After successful compilation, run the executable:
+
+```bash
+./printf
+```
+
+---
+
+### 4. Using `_printf`
+
+The `_printf` function can be used similarly to the standard `printf` function.
+
+Example:
+
+```c
+#include "main.h"
+
+int main(void)
+{
+    _printf("Character: %c\n", 'H');
+    _printf("String: %s\n", "Hello World");
+    _printf("Number: %d\n", 123);
+    _printf("Integer: %i\n", -45);
+    _printf("Percent: %%\n");
+
+    return (0);
+}
+```
+
+Expected output:
+
+```text
+Character: H
+String: Hello World
+Number: 123
+Integer: -45
+Percent: %
+```
+
+---
+
+### 5. Supported format specifiers
+
+The current implementation supports:
+
+| Specifier | Description |
+|-----------|-------------|
+| `%c` | Prints a single character |
+| `%s` | Prints a string |
+| `%d` | Prints a signed decimal integer |
+| `%i` | Prints a signed integer |
+| `%%` | Prints a percent sign |
+
+The `_printf` function returns the total number of characters printed.
