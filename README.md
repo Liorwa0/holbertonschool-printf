@@ -145,16 +145,4 @@ Percent: %
 
 ---
 
-### 5. Supported format specifiers
-
-The current implementation supports:
-
-| Specifier | Description |
-|-----------|-------------|
-| `%c` | Prints a single character |
-| `%s` | Prints a string |
-| `%d` | Prints a signed decimal integer |
-| `%i` | Prints a signed integer |
-| `%%` | Prints a percent sign |
-
 The `_printf` function returns the total number of characters printed.
